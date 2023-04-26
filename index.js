@@ -20,7 +20,7 @@ const mongoose=require("mongoose");
 // })
 const app=express();
 //declare port
-app.listen(8008,console.log("Server is running on port 8008!!"))
+app.listen(process.env.PORT||8008,console.log("Server is running on port 8008!!"))
 app.use(express.json());
 //routes 
 //for acessing the whole database information
